@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelCard from "./HotelCard";
 import { Col, Row } from "react-bootstrap";
@@ -6,7 +6,17 @@ import Container from "react-bootstrap/Container";
 import Spinner from "react-bootstrap/Spinner";
 import Search from "../search/Search";
 
+const BackToTop = function ({ elementRef }) {
+    function ScrollToTop() {
+        elementRef.current.scrollTo({ behavior: "smooth", top: 0 });
+    }
+
+    return <button onClick={ScrollToTop}>Go to Top</button>
+}
+
 function HotelsList() {
+
+    const refApp = useRef(null);
 
     const [hotelsList, setHotelsList] = useState([]);
     const [filteredHotels, setFilteredHotels] = useState([]);
@@ -57,8 +67,9 @@ function HotelsList() {
 
     return (
         <Container>
+            <div className="hotelsList__search" ref={refApp}>
             <h1>Hotels</h1>
-            <div className="hotelsList__search">
+            <div>
                 <Search makeSearch={handleSearch} />
                 {displayResults()}
             </div>
@@ -70,6 +81,8 @@ function HotelsList() {
                     </Col>
                 )
             })}
+            </div>
+            <BackToTop elementRef={refApp} />
         </Container>
     )
 }
