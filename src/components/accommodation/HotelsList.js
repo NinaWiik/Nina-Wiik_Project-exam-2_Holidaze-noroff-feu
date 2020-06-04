@@ -47,7 +47,7 @@ function HotelsList() {
 
     function displayResults() {
         if (filteredHotels.length === 0) {
-            return <div className="filter">No results</div>
+            return <div className="hotelsList__filter">Sorry, no results</div>
         }
     }
 
