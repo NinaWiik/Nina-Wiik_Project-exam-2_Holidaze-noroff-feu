@@ -1,0 +1,124 @@
+// BLOCKTAGS // 
+
+h1 {
+    color: darkPurple;
+    font-family: 'CaviarDreams', arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-size: 2em;
+    color: $darkPurple;
+}
+
+h2 {
+    font-family: 'CaviarDreams', arial, sans-serif;
+    background-color: $darkPurple;
+    color: $pink;
+    border: 3px solid $pink;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 8px 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h4 {
+    font-family: 'centuryGothic', Arial, Helvetica, sans-serif;
+    background-color: $pink;
+    color: $darkPurple;
+    border: 2px solid $darkPurple;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+h5 {
+    color: darkPurple;
+    font-family: 'CaviarDreams', arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1.1em;
+    color: $darkPurple;
+}
+
+p {
+    font-family: 'centuryGothic', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: $pink;
+    color: $darkPurple;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid $darkPurple;
+    width: 7em;
+    float: left;
+}
+
+.btn-primary:hover {
+    background-color: $darkPurple;
+    color: $pink;
+    border: 3px solid $pink;
+}
+
+.btn-primary:active, .btn-primary:focus {
+    background-color: $darkPurple !important;
+    color: $pink !important;
+    border: 3px solid $pink !important;
+    box-shadow: none !important;
+}
+
+.btn-danger {
+    background-color: $darkPurple;
+    color: $pink;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid $pink;
+    width: 7em;
+    float: right;
+    margin-right: 4.5%;
+}
+
+.btn-danger:active, .btn-danger:focus {
+    background-color: $pink !important;
+    color: $darkPurple !important;
+    border: 3px solid $darkPurple !important;
+    box-shadow: none !important;
+}
+
+.btn-danger:hover {
+    background-color: $pink;
+    color: $darkPurple;
+    border: 3px solid $darkPurple;
+}
+
+a {
+    color: $darkPurple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $pink;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: $pink;
+}

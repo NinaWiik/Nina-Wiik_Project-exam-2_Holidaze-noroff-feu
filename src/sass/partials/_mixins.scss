@@ -1,0 +1,15 @@
+// MIXINS //
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: local('CaviarDreams'), url(../../assets/fonts/CaviarDreams_Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: local('GOTHIC'), url(../../assets/fonts/GOTHIC.TTF) format('truetype');
+}
+
+@mixin pictureBorder {
+    border: 2px solid $darkPurple;
+}

@@ -1,0 +1,103 @@
+
+
+.hotelCard__col--img {
+    float: left;
+    width: 100%;
+}
+
+.hotelCard__col{
+    padding: 0;
+}
+
+.hotelDetail__container {
+    padding: 0;
+}
+
+.hotelDetail__row {
+    margin: 15px 0;
+    border: 3px solid $darkPurple;
+    background-color: $white;
+    border-radius: 5px;
+    background-color: $mediumPurple;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.hotelDetail__col--image {
+    padding: 0;
+}
+
+.hotelDetail__col--text {
+    margin-left: 10px;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.hotelDetails__col--map {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+
+.hotelDetail__image {
+    width: 97%;
+    margin: 10px;
+}
+
+.hotelDetails__button--inquiry {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+a.hotelDetail__col--mail {
+    color: white;
+}
+
+a.hotelDetail__col--mail:hover {
+    text-decoration: underline;
+}
+
+.card-body {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.search__input {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input.form-control {
+    border: 3px solid $darkPurple;
+}
+
+.hotelCard__row {
+    background-color: $mediumPurple;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hotelCard__col--text {
+    margin: 10px 20px;
+    border-left: 2px solid black;
+    margin: 0;
+}
+
+.hotelCard__col--img {
+    width: 100%;
+}
+
+.hotelsList__col {
+    padding: 0;
+}
+
+.hotelCard__hotelsItem--col {
+    padding: 0;
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: #E9E8EB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+    position: relative;
+}
+
+#root {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 200px;
+}

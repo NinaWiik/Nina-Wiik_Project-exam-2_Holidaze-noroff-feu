@@ -1,0 +1,191 @@
+.dashboard__img {
+    width: 100%;
+    @include pictureBorder;
+}
+
+
+.dashboard__col2 {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+input.editHotel__formControl--price {
+    width: 3em; 
+    margin: 0 10px;
+}
+
+input.editHotel__formControl--catering {
+    width: 10em;
+}
+
+.editHotel__col {
+    background-color: $mediumPurple;
+    padding: 20px 0 60px 30px;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+}
+
+
+label {
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+input.form-control, textarea.form-control {
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.react-confirm-alert-body {
+    background: rgb(124,115,132);
+    background: linear-gradient(145deg, rgba(124,115,132,1) 35%, rgba(52,26,61,1) 100%);
+    border: 2px solid $pink;
+}
+
+.react-confirm-alert-body > h1 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.react-confirm-alert-button-group > button {
+    color: $pink;
+    background-color: $darkPurple;
+    border: 2px solid $pink;
+    text-transform: uppercase;
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.react-confirm-alert-button-group {
+    display: block;
+    text-align: center;
+}
+
+.react-confirm-alert-overlay {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.hotels__container {
+    padding: 0;
+}
+
+.addHotel__col {
+    background-color: $mediumPurple;
+    padding: 20px 0 60px 30px;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+}
+
+.addHotel__button--popover {
+    background-color: white;
+    width: 12px;
+    padding: 1px;
+    padding-left: 2.5px;
+    text-align: center;
+    text-transform: unset;
+    border: 1px solid $darkPurple;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.addHotel__button--popover:hover {
+    background-color: white;
+    border: 2px solid $darkPurple;
+}
+
+.addHotel__button--popover:focus, .addHotel__button--popover:active {
+    background-color: none !important;
+    color: none !important;
+    border: none!important;
+    box-shadow: none !important;
+}
+
+input.form-control {
+    margin-right: 0;
+}
+
+.makeEnquiry__popover {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 16px;
+}
+
+.messageItem__row--first {
+    background-color: $mediumPurple;
+    margin-bottom: 40px;
+    color: white;
+    padding-top: 10px;
+    border: 2px solid $darkPurple;
+    border-radius: 5px;
+}
+
+.messageItem__row--second {
+    margin-left: 0px;
+}
+
+.messageItem__row--buttons {
+    width: 110%;
+}
+
+.messageItem__col--reply {
+    float: left;
+}
+
+.messageItem__col--delete {
+    float: right;
+}
+
+.messageItem__button--reply {
+    margin-left: 13px;
+}
+
+.messageItem__button--delete {
+    background-color: #341A3D;
+    color: #FF519B;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #FF519B;
+    width: 7em;
+    float: right;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+
+.messageItem__button--delete:active, .messageItem__button--delete:focus {
+    background-color: $pink !important;
+    color: $darkPurple !important;
+    border: 3px solid $darkPurple !important;
+    box-shadow: none !important;
+}
+
+.messageItem__button--delete:hover {
+    background-color: $pink;
+    color: $darkPurple;
+    border: 3px solid $darkPurple;
+}
+
+a.messageItem__col--email {
+    color: white;
+}
+
+a.messageItem__col--email:hover {
+    text-decoration: underline;
+}
+
+.form-row {
+    margin-right: 12px;
+}
+
+.deleteHotel__button--delete {
+    background-color: $pink;
+}

@@ -1,0 +1,123 @@
+.bergen__picture1 {
+    float: left;
+    margin-right: 0.5em;
+    width: 30%;
+    @include pictureBorder;
+}
+
+.whatsup {
+    border-bottom: 5px solid $darkPurple;
+    padding-bottom: 20px;
+}
+
+.container__cover {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+
+.home__Row {
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.bergen__cover {
+    width: 100%;
+    border-top: 2px solid $darkPurple;
+    border-bottom: 2px solid $darkPurple;
+}
+
+
+.subscribe__col {
+    background-color: $darkPurple;
+    color: $pink;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 3px solid $pink;
+    border-radius: 10px;
+}
+
+.subscribe__col--error {
+    margin-left: 10px;
+}
+
+input.subscribe__form--input.form-control {
+    width: 300px;
+    margin-right: 15px;
+}
+
+.paragraph__subscribe--title {
+    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3.5px;
+    margin-bottom: 3px;
+}
+
+.paragraph__subscribe--sub {
+    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+}
+
+.form-control {
+    width: 500px;
+}
+
+.modal__sub {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.modal-content {
+    background-color: $mediumPurple;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    color: $white;
+    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.modal__sub--header {
+    font-size: 24px;
+    color: white;
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+}
+
+button.close {
+    color: $white;
+}
+
+.modal__sub--button {
+    background-color: $darkPurple;
+    border: 2px solid $pink;
+    color: $pink;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.modal__sub--button:hover {
+    background-color: $pink;
+    border: 2px solid $darkPurple;
+    color: $darkPurple;
+}
+
+.errorMessageSub {
+    color: $pink;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}

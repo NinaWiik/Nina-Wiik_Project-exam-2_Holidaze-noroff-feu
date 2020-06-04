@@ -1,0 +1,84 @@
+.contact__firstName, .contact__lastName, .contact__telephone, .contact__email {
+    display: inline-block;
+}
+
+.col-sm-6 {
+    padding: 0;
+}
+
+input.form-control {
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+textarea.form-control {
+    width: 190%;
+    margin-bottom: 5px;
+}
+
+.contact__col {
+    background-color: $mediumPurple;
+    padding: 20px 0 50px 30px;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+}
+
+.errorMessage {
+    color: $darkPurple;
+    font-size: 0.9em;
+    padding: 5px;
+    font-weight: bold;
+    background: rgb(255,81,155);
+    background: linear-gradient(151deg, rgba(255,81,155,1) 58%, rgba(255,255,255,0) 100%);
+    display: inline;
+    border-radius: 2px;
+
+}
+
+.errorMessageSub {
+    color: $darkPurple;
+    font-size: 0.9em;
+    padding: 5px;
+    font-weight: bold;
+    background: rgb(255,81,155);
+    background: linear-gradient(151deg, rgba(255,81,155,1) 58%, rgba(255,255,255,0) 100%);
+    display: inline;
+    border-radius: 2px;
+
+}
+
+
+
+textarea.contact__formControl--text.form-control {
+    width: 190%;
+}
+
+.modal-content {
+    background: rgb(124,115,132);
+    background: linear-gradient(145deg, rgba(124,115,132,1) 35%, rgba(52,26,61,1) 100%);
+    border: 2px solid $pink;
+}
+
+.modal__contact--header {
+    font-size: 24px;
+    color: white;
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.modal__contact--button {
+    background-color: $darkPurple;
+    border: 2px solid $pink;
+    color: $pink;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.modal__contact--button:hover {
+    background-color: $pink;
+    border: 2px solid $darkPurple;
+    color: $darkPurple;
+}

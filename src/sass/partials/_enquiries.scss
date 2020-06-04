@@ -1,0 +1,67 @@
+.makeEnquiry__form {
+    background-color: $mediumPurple;
+    padding: 20px 0 60px 30px;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+}
+
+.enquiriesItem__row {
+    background-color: $mediumPurple;
+    margin-bottom: 40px;
+    color: white;
+    padding-top: 10px;
+    border: 2px solid $darkPurple;
+    border-radius: 5px;
+}
+
+input.form-control.check {
+    width: 100%;
+}
+
+.makeEnquiry__formLabel {
+    margin-right: 20px;
+}
+
+.enquiriesItem__row--buttons {
+    width: 110%;
+}
+
+.enquiriesItem__col--reply {
+    float: left;
+    margin-left: 20px;
+}
+
+.enquiriesItem__col--delete {
+    float: right;
+}
+
+.enquriesItem__button--reply {
+    margin-left: 13px;
+}
+
+.enquiriesItem__button--delete {
+    background-color: #341A3D;
+    color: #FF519B;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #FF519B;
+    width: 7em;
+    float: right;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+
+.enquiriesItem__button--delete:active, .enquiriesItem__button--delete:focus {
+    background-color: $pink !important;
+    color: $darkPurple !important;
+    border: 3px solid $darkPurple !important;
+    box-shadow: none !important;
+}
+
+.enquiriesItem__button--delete:hover {
+    background-color: $pink;
+    color: $darkPurple;
+    border: 3px solid $darkPurple;
+}

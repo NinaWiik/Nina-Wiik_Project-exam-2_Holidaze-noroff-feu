@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #E9E8EB;
+    font-family: CaviarDreams, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+.nav-link {
+    margin: 0 20px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $darkPurple;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $pink;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: $mediumPurple;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logout__button {
+    background-color: $pink;
+    color: $darkPurple;
+    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 1px;
+    font-weight: bold;
+    border: 2px solid $darkPurple;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+}
