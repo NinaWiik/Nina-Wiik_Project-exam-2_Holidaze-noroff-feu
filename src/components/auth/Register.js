@@ -31,7 +31,7 @@ function Register() {
                 <Col className="col-md-5">
             <h1>Login</h1>
             <div className="register__col">
-                <p className="register__paragraph">Please login with your username to get access to the administration panel. If your dont already have a username, you can register one. </p>
+                <p className="register__paragraph">Please login with your username to get access to the administration dashboard. </p>
                 <Col lg="12" className="register__col--form">
         <Form onSubmit={handleSubmit(onSubmit)}>
             <Form.Group>
