@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelCard from "./HotelCard";
 import { Col, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Spinner from "react-bootstrap/Spinner";
 import Search from "../search/Search";
-import BackToTop from "react-back-to-top-button";
-
 
 function HotelsList() {
 
@@ -61,7 +58,7 @@ function HotelsList() {
     return (
         <Container>
             <h1>Hotels</h1>
-            <div>
+            <div className="hotelsList__search">
                 <Search makeSearch={handleSearch} />
                 {displayResults()}
             </div>
@@ -73,13 +70,6 @@ function HotelsList() {
                     </Col>
                 )
             })}
-                                    <BackToTop
-                            showOnScrollUp
-                            showAt={100}
-                            speed={1500}
-                            easing="easeInOutQuint">
-                                <span>Back to Top</span>
-                            </BackToTop>
         </Container>
     )
 }
