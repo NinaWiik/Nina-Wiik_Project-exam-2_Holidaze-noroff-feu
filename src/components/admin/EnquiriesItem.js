@@ -8,7 +8,7 @@ function EnquiriesItem({ id, name, email, checkIn, checkOut }) {
         <Container fluid>
             <Row  className="enquiriesItem__row">
                 <Col md={6} className="">
-                            <p><b>Hotel Name:</b> {name}</p> 
+                            <p><b>Full Name:</b> {name}</p> 
                             <p><b>Email:</b> {email}</p> 
                             <p><b>Hotel Id:</b> {id}</p> 
                         </Col>

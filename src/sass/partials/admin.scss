@@ -19,6 +19,12 @@ button.dashboard__button {
     border: 3px solid $pink;
 }
 
+button.dashboard__button:hover {
+    background-color: $pink;
+    color: $darkPurple;
+    border: 3px solid $darkPurple;
+}
+
 input.editHotel__formControl--price {
     width: 3em; 
     margin: 0 10px;

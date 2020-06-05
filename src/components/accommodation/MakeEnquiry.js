@@ -8,6 +8,7 @@ import Spinner from "react-bootstrap/Spinner";
 import ErrorMessage from "../contact/ErrorMessage";
 import "react-datepicker/dist/react-datepicker.css";
 import ReactDatePicker from 'react-datepicker';
+import ModalEnquiry from "../modals/ModalEnquiry";
 import Moment from "moment";
 
 const schema = yup.object().shape({
@@ -30,6 +31,7 @@ function MakeEnquiry() {
     });
     const [enquiry, makeInquiry] = useState(defaultState);
     const [loading, setLoading] = useState(true);
+    const [modalShow, setModalShow] = useState(false);
 
     let { id } = useParams();
     const url = BASE_URL + "establishments/" + id;
@@ -58,7 +60,7 @@ function MakeEnquiry() {
             .then((r) => r.json())
             .then((j) => console.log(j));
         console.log("data", data);
-        history.push("../admin/enquiries");
+        history.push(setModalShow(true));
 
         }
 
@@ -67,6 +69,7 @@ function MakeEnquiry() {
         <Container className="register__container" fluid>
         <Row className="justify-content-md-center">
             <Col md={4}>
+                { modalShow && <ModalEnquiry show={modalShow} />}
         <Form onSubmit={handleSubmit(onSubmit)}>
             <h1>Make Enquiry</h1>
             <div className="makeEnquiry__form">
@@ -121,6 +124,7 @@ function MakeEnquiry() {
             </Form.Row>
 
             <Button type="submit">Submit</Button>
+            <ModalEnquiry show={modalShow} onHide={() => setModalShow(false)} />
             </div>
         </Form>
         </Col>

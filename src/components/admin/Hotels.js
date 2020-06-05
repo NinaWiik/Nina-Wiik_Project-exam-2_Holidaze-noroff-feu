@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelsItem from "./HotelsItem";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Spinner } from "react-bootstrap";
 
 function Hotels() {
     const [hotels, setHotels] = useState([]);
 
     const url = BASE_URL + "establishments";
+
+    const [loading, setLoading] = useState(true);
 
     const options = { headers };
 
@@ -17,8 +19,13 @@ function Hotels() {
                 console.log(json);
                 setHotels(json);
             })
-            .catch((error) => console.log(error));
+            .catch((error) => console.log(error))
+            .finally(() => setLoading(false));
     }, []);
+
+    if (loading) {
+        return <Spinner animation="border" variant="info" />;
+    }
 
     return (
         <Container className="hotels__container">
