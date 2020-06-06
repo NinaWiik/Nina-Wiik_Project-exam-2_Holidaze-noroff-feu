@@ -1,4 +1,7 @@
-.contact__firstName, .contact__lastName, .contact__telephone, .contact__email {
+.contact__firstName,
+.contact__lastName,
+.contact__telephone,
+.contact__email {
     display: inline-block;
 }
 
@@ -26,11 +29,11 @@ textarea.form-control {
 
 .errorMessage {
     color: $darkPurple;
-    font-size: 0.9em;
+    font-size: 0.7em;
     padding: 5px;
     font-weight: bold;
-    background: rgb(255,81,155);
-    background: linear-gradient(151deg, rgba(255,81,155,1) 58%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 81, 155);
+    background: linear-gradient(151deg, rgba(255, 81, 155, 1) 58%, rgba(255, 255, 255, 0) 100%);
     display: inline-block;
     border-radius: 2px;
 
@@ -41,8 +44,8 @@ textarea.form-control {
     font-size: 0.9em;
     padding: 5px;
     font-weight: bold;
-    background: rgb(255,81,155);
-    background: linear-gradient(151deg, rgba(255,81,155,1) 58%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 81, 155);
+    background: linear-gradient(151deg, rgba(255, 81, 155, 1) 58%, rgba(255, 255, 255, 0) 100%);
     display: inline;
     border-radius: 2px;
 
@@ -55,8 +58,8 @@ textarea.contact__formControl--text.form-control {
 }
 
 .modal-content {
-    background: rgb(124,115,132);
-    background: linear-gradient(145deg, rgba(124,115,132,1) 35%, rgba(52,26,61,1) 100%);
+    background: rgb(124, 115, 132);
+    background: linear-gradient(145deg, rgba(124, 115, 132, 1) 35%, rgba(52, 26, 61, 1) 100%);
     border: 2px solid $pink;
 }
 

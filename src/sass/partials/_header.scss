@@ -2,7 +2,7 @@
     background-color: #E9E8EB;
     font-family: CaviarDreams, Arial, sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: 5px;
     text-transform: uppercase;
 
@@ -32,6 +32,12 @@
 
 .logo {
     width: 65%;
+}
+
+.nav__icon {
+    font-size: 25px;
+    margin-bottom: 9px;
+    margin-right: 10px;
 }
 
 .logout__button {
