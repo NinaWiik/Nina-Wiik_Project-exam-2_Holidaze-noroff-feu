@@ -3,15 +3,18 @@
 @media (min-width: 601px) and (max-width: 1024px) {
     // HOME
 
-    .navbar-toggler, .navbar-toggler.collapsed {
+    .navbar-toggler,
+    .navbar-toggler.collapsed {
         background-color: $pink;
         border: 3px solid $darkPurple;
         color: $darkPurple;
         margin-top: -100px;
     }
 
-    a.nav-link.active, a.nav-link  {
+    a.nav-link.active,
+    a.nav-link {
         margin-right: 0;
+        text-align: right;
     }
 
     .ml-auto.navbar-nav {
@@ -22,12 +25,14 @@
         margin-left: 84%;
     }
 
+
+
     .nav-link {
         font-size: 20px;
         text-align: right;
     }
 
-    .justify-content-md-center.row{
+    .justify-content-md-center.row {
         margin-right: -350px;
         margin-left: -350px;
     }
@@ -49,12 +54,12 @@
     p {
         font-size: 17px;
     }
-    
+
     .btn-primary {
         width: 8em;
         margin-bottom: 10px;
     }
-    
+
     .modal-content {
         margin: 0;
     }
@@ -80,11 +85,13 @@
     .col-lg-2.col-8 {
         padding: 0;
     }
-    
-    .makeEnquiry__form, .contact__col, .register__col {
+
+    .makeEnquiry__form,
+    .contact__col,
+    .register__col {
         padding-bottom: 60px;
     }
-    
+
 
     // ADMIN
 
@@ -108,5 +115,31 @@
 
     .addHotel__button--popover {
         width: 20px;
+    }
+}
+
+// PHONE
+
+@media only screen and (max-width: 600px) {
+    a.nav-link {
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .navbar-toggler {
+        margin-top: -60px;
+    }
+
+    .logo {
+        width: 250%;
+    }
+
+    .navbar-collapse {
+        margin-top: -50px;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 50px;
     }
 }

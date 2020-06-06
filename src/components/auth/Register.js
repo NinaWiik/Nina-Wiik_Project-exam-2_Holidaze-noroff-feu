@@ -8,7 +8,7 @@ import ErrorMessage from "../contact/ErrorMessage";
 
 const schema = yup.object().shape({
   username: yup.string().required("Username is required"),
-  password: yup.string().required("Password is required"),
+  password: yup.string().required("A password is required"),
 });
 
 function Register() {
@@ -51,9 +51,9 @@ function Register() {
                 <Form.Group>
                   <Form.Label>Password</Form.Label>
                   <Form.Control
-                    type="password"
                     name="password"
-                    placeholder="Enter password"
+                    type="password"
+                    placeholder="Enter your password"
                     ref={register}
                   />
                   {errors.password && (
