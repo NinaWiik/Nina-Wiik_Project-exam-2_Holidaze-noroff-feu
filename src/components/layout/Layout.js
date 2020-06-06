@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 import Navigation from "./Navigation";
 
-
 function Layout() {
-
-    return (
-        <>
-        <Navigation />
-        </>
-    );
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
-export default Layout; 
+export default Layout;

@@ -87,7 +87,8 @@ p {
     border: 3px solid $pink;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active,
+.btn-primary:focus {
     background-color: $darkPurple !important;
     color: $pink !important;
     border: 3px solid $pink !important;
@@ -106,7 +107,8 @@ p {
     margin-right: 4.5%;
 }
 
-.btn-danger:active, .btn-danger:focus {
+.btn-danger:active,
+.btn-danger:focus {
     background-color: $pink !important;
     color: $darkPurple !important;
     border: 3px solid $darkPurple !important;

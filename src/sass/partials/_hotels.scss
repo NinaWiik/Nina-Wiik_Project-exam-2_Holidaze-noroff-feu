@@ -1,11 +1,9 @@
-
-
 .hotelCard__col--img {
     float: left;
     width: 100%;
 }
 
-.hotelCard__col{
+.hotelCard__col {
     padding: 0;
 }
 
@@ -107,12 +105,18 @@ a.hotelDetail__col--mail:hover {
     font-size: 2em;
     padding: 5px 10px;
     font-weight: bold;
-    background: rgb(255,81,155);
-    background: linear-gradient(151deg, rgba(255,81,155,1) 58%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 81, 155);
+    background: linear-gradient(151deg, rgba(255, 81, 155, 1) 58%, rgba(255, 255, 255, 0) 100%);
     display: inline;
     border-radius: 5px;
 }
 
 .hotelsList__button--scroll {
     width: 15%;
+}
+
+.spinner {
+    color: $pink;
+    width: 100px;
+    height: 100px;
 }

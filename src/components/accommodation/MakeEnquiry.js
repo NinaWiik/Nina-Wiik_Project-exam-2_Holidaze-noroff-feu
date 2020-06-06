@@ -9,7 +9,6 @@ import ErrorMessage from "../contact/ErrorMessage";
 import "react-datepicker/dist/react-datepicker.css";
 import ReactDatePicker from "react-datepicker";
 import ModalEnquiry from "../modals/ModalEnquiry";
-import Moment from "moment";
 
 const schema = yup.object().shape({
   name: yup.string().required("A name is required"),

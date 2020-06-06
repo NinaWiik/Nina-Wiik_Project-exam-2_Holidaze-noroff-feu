@@ -32,7 +32,7 @@ button.dashboard__button:hover {
 }
 
 input.editHotel__formControl--price {
-    width: 3em; 
+    width: 3em;
     margin: 0 10px;
 }
 
@@ -55,7 +55,8 @@ label {
     font-weight: bold;
 }
 
-input.form-control, textarea.form-control {
+input.form-control,
+textarea.form-control {
     font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
     letter-spacing: 1.5px;
     font-weight: bold;
@@ -63,25 +64,25 @@ input.form-control, textarea.form-control {
 }
 
 .react-confirm-alert-body {
-    background: rgb(124,115,132);
-    background: linear-gradient(145deg, rgba(124,115,132,1) 35%, rgba(52,26,61,1) 100%);
+    background: rgb(124, 115, 132);
+    background: linear-gradient(145deg, rgba(124, 115, 132, 1) 35%, rgba(52, 26, 61, 1) 100%);
     border: 2px solid $pink;
 }
 
-.react-confirm-alert-body > h1 {
+.react-confirm-alert-body>h1 {
     font-size: 20px;
     color: white;
     text-align: center;
 }
 
-.react-confirm-alert-button-group > button {
+.react-confirm-alert-button-group>button {
     color: $pink;
     background-color: $darkPurple;
     border: 2px solid $pink;
     text-transform: uppercase;
     font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
+
 }
 
 .react-confirm-alert-button-group {
@@ -122,10 +123,11 @@ input.form-control, textarea.form-control {
     border: 2px solid $darkPurple;
 }
 
-.addHotel__button--popover:focus, .addHotel__button--popover:active {
+.addHotel__button--popover:focus,
+.addHotel__button--popover:active {
     background-color: none !important;
     color: none !important;
-    border: none!important;
+    border: none !important;
     box-shadow: none !important;
 }
 
@@ -182,7 +184,8 @@ input.form-control {
     margin-bottom: 13px;
 }
 
-.messageItem__button--delete:active, .messageItem__button--delete:focus {
+.messageItem__button--delete:active,
+.messageItem__button--delete:focus {
     background-color: $pink !important;
     color: $darkPurple !important;
     border: 3px solid $darkPurple !important;
@@ -216,4 +219,3 @@ svg {
     margin-bottom: 5px;
     margin-right: 5px;
 }
-

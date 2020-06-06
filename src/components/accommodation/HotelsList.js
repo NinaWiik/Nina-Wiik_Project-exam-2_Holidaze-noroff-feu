@@ -66,9 +66,11 @@ function HotelsList() {
 
   if (loading) {
     return (
-      <Spinner animation="grow" className="spinner">
-        <span className="sr-only">Loading...</span>
-      </Spinner>
+      <Row className="justify-content-md-center">
+        <Spinner animation="grow" size="lg" className="spinner">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      </Row>
     );
   }
 
