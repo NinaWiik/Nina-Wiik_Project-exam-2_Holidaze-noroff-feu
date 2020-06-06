@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+.dashboard__paragraph {
+    margin-bottom: 18px;
+}
+
 button.dashboard__button {
     width: 100%;
     margin-right: 20px;
@@ -17,6 +21,8 @@ button.dashboard__button {
     background-color: $darkPurple;
     color: $pink;
     border: 3px solid $pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 button.dashboard__button:hover {

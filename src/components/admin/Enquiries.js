@@ -22,9 +22,9 @@ function Enquiries() {
     
     
     return (
-        <Container>
+        <Container fluid>
             <Row className="justify-content-md-center">
-                <Col md={8}>
+                <Col md={5} xs={6}>
             <h1>Enquiries</h1>
             {enquiries.map(function (enquiry) {
                 const { id, name, email, checkIn, checkOut } = enquiry; 

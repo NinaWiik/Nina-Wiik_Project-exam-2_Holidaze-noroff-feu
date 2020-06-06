@@ -28,7 +28,7 @@ function Subscribe() {
     return (
         <Container fluid className="container__cover">
             <Row className="justify-content-md-center">
-                <Col className="subscribe__col" md={4} xs={5}>
+                <Col className="subscribe__col" md={4} xs={12}>
                     <Col>
                         <p className="paragraph__subscribe--title">Subscribe on our newsletter</p>
                         <p className="paragraph__subscribe--sub">Get exclusive offers straight in your mailbox</p>

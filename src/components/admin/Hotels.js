@@ -1,47 +1,82 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelsItem from "./HotelsItem";
-import { Container, Col, Row, Spinner } from "react-bootstrap";
+import { Container, Col, Row, Spinner, Button } from "react-bootstrap";
+
+const BackToTop = function ({ elementRef }) {
+  function ScrollToTop() {
+    window.scrollTo({ behavior: "smooth", top: 0 });
+  }
+
+  return (
+    <Button className="hotelsList__button--scroll" onClick={ScrollToTop}>
+      Go to Top
+    </Button>
+  );
+};
 
 function Hotels() {
-    const [hotels, setHotels] = useState([]);
+  const refApp = useRef(null);
 
-    const url = BASE_URL + "establishments";
+  const [hotels, setHotels] = useState([]);
 
-    const [loading, setLoading] = useState(true);
+  const url = BASE_URL + "establishments";
 
-    const options = { headers };
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetch(url, options)
-            .then((response) => response.json())
-            .then((json) => {
-                console.log(json);
-                setHotels(json);
-            })
-            .catch((error) => console.log(error))
-            .finally(() => setLoading(false));
-    }, []);
+  const options = { headers };
 
-    if (loading) {
-        return <Spinner animation="border" variant="info" />;
-    }
+  useEffect(() => {
+    fetch(url, options)
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        setHotels(json);
+      })
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
+  }, []);
 
-    return (
-        <Container className="hotels__container">
+  if (loading) {
+    return <Spinner animation="border" variant="info" />;
+  }
+
+  return (
+    <Container className="hotels__container">
+      <div ref={refApp}>
         <h1>Hotels</h1>
         {hotels.map(function (hotel) {
-            const { id, name, image, maxGuests, price, selfCatering, description } = hotel;
-            return (
-                <Row>
-                <Col key={hotel.id}>
-                    <HotelsItem id={id} image={image} name={name} maxGuests={maxGuests} selfCatering={selfCatering} description={description} price={price} />
-                </Col>
-                </Row>
-            )
+          const {
+            id,
+            name,
+            image,
+            maxGuests,
+            price,
+            selfCatering,
+            description,
+          } = hotel;
+          return (
+            <Row>
+              <Col key={hotel.id}>
+                <HotelsItem
+                  id={id}
+                  image={image}
+                  name={name}
+                  maxGuests={maxGuests}
+                  selfCatering={selfCatering}
+                  description={description}
+                  price={price}
+                />
+              </Col>
+            </Row>
+          );
         })}
+        <Row className="justify-content-md-center">
+          <BackToTop />
+        </Row>
+      </div>
     </Container>
-    );
+  );
 }
 
 export default Hotels;

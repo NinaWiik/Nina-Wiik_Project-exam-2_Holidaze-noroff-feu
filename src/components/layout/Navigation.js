@@ -10,7 +10,7 @@ function Navigation() {
     return (
         <Navbar expand="lg">
                 <Navbar.Brand href="/"><img src={logo} className="logo" alt="logo"/></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav navigation__navbar--toggle" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
             

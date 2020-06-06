@@ -1,0 +1,112 @@
+// TABLET
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    // HOME
+
+    .navbar-toggler, .navbar-toggler.collapsed {
+        background-color: $pink;
+        border: 3px solid $darkPurple;
+        color: $darkPurple;
+        margin-top: -100px;
+    }
+
+    a.nav-link.active, a.nav-link  {
+        margin-right: 0;
+    }
+
+    .ml-auto.navbar-nav {
+        margin-top: -100px;
+    }
+
+    .logout__button {
+        margin-left: 84%;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .justify-content-md-center.row{
+        margin-right: -350px;
+        margin-left: -350px;
+    }
+
+    .image__footer--some {
+        width: 20%;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .paragraph__footer--left {
+        font-size: 1em;
+    }
+
+    // GLOBAL
+
+    p {
+        font-size: 17px;
+    }
+    
+    .btn-primary {
+        width: 8em;
+        margin-bottom: 10px;
+    }
+    
+    .modal-content {
+        margin: 0;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    // ACCOMMODATION
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .hotelCard__col--img {
+        height: 255px;
+    }
+
+    p.hotelCard__col--paragraph {
+        font-size: 15px;
+    }
+
+    .col-lg-2.col-8 {
+        padding: 0;
+    }
+    
+    .makeEnquiry__form, .contact__col, .register__col {
+        padding-bottom: 60px;
+    }
+    
+
+    // ADMIN
+
+    button.dashboard__button {
+        margin-bottom: 8px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .dashboard__img {
+        height: 340px;
+    }
+
+    .dashboard__paragraph {
+        margin-bottom: 7px;
+    }
+
+    .hotelCard__col--img {
+        height: 100%;
+    }
+
+    .addHotel__button--popover {
+        width: 20px;
+    }
+}

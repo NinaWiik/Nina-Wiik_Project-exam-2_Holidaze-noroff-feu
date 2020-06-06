@@ -14,7 +14,7 @@ function Dashboard() {
         <Row>
         <Col className="col-md-5" ><img src={Bergen3} className="dashboard__img" alt="Bryggen in Bergen"/></Col>
         <Col className="dashboard__col2">
-            <p className="dashboard__paragraph">Welcome to your dashboard. Here you can find all the hotel listings. You can also manage the different hotels, or add/delete hotels. You also have access to your mails from customers. </p>
+            <p className="dashboard__paragraph">Welcome to your dashboard. Here you can find all the hotel listings. You can also manage the different hotels, or add/delete hotels. You also have access to messages and enquiries from customers. </p>
 
                     <NavLink to="/admin/hotels"><Button className="dashboard__button"><FaHotel />List Hotels</Button></NavLink>
 

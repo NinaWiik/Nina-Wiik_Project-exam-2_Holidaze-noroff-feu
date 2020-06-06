@@ -7,36 +7,36 @@ import { BASE_URL, headers, DELETE } from "../../constants/Api";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
 function DeleteHotel(props) {
-    const history = useHistory();
+  const history = useHistory();
 
-    function checkDelete() {
-        confirmAlert({
-            title: "Are you sure you want to delete this accommodation?",
-            buttons: [
-                {
-                    label: "yes",
-                    className: "deleteHotel__button--delete",
-                    onClick: () => deleteHotel(),
-                },
-                {
-                    label: "no",
-                },
-            ],
-        });
-    }
+  function checkDelete() {
+    confirmAlert({
+      title: "Are you sure you want to delete this accommodation?",
+      buttons: [
+        {
+          label: "yes",
+          className: "deleteHotel__button--delete",
+          onClick: () => deleteHotel(),
+        },
+        {
+          label: "no",
+        },
+      ],
+    });
+  }
 
-    async function deleteHotel() {
-        const url = BASE_URL + "establishments/" + props.id;
-        const options = { headers, method: DELETE };
-        await fetch(url, options);
-        history.push("/admin/hotels");
-    }
+  async function deleteHotel() {
+    const url = BASE_URL + "establishments/" + props.id;
+    const options = { headers, method: DELETE };
+    await fetch(url, options);
+    history.push("/admin/hotels");
+  }
 
-    return (
-        <Button variant="danger" onClick={checkDelete}>
-            Delete
-        </Button>
-    );
+  return (
+    <Button variant="danger" onClick={checkDelete}>
+      Delete
+    </Button>
+  );
 }
 
 export default DeleteHotel;

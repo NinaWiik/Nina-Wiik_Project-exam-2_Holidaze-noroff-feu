@@ -74,7 +74,7 @@ function AddHotel() {
     return (
         <Container className="register__container" fluid>
         <Row className="justify-content-md-center">
-            <Col className="col-md-5">
+            <Col md={5}>
         <Form onSubmit={handleSubmit(onSubmit)}>
             <h1>Add Accommodation</h1>
             <div className="editHotel__col">

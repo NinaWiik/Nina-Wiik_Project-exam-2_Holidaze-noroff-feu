@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelCard from "./HotelCard";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Spinner from "react-bootstrap/Spinner";
 import Search from "../search/Search";
 
 const BackToTop = function ({ elementRef }) {
     function ScrollToTop() {
-        elementRef.current.scrollTo({ behavior: "smooth", top: 0 });
+        window.scrollTo({ behavior: "smooth", top: 0 });
     }
 
-    return <button onClick={ScrollToTop}>Go to Top</button>
+    return <Button className="hotelsList__button--scroll" onClick={ScrollToTop}>Go to Top</Button>
 }
 
 function HotelsList() {
@@ -73,16 +73,18 @@ function HotelsList() {
                 <Search makeSearch={handleSearch} />
                 {displayResults()}
             </div>
-            {filteredHotels.map(function (hotel) {
+            {filteredHotels.map(function (hotel, index) {
                 const { id, name, image, lat, lng, price, description } = hotel;
                 return (
-                    <Col className="hotelsList__col" key={hotel.id}>
+                    <Col className="hotelsList__col" key={index}>
                         <HotelCard id={id} image={image} name={name} lat={lat} lng={lng} description={description} price={price} />
                     </Col>
                 )
             })}
+            <Row className="justify-content-md-center">
+            <BackToTop />
+            </Row>
             </div>
-            <BackToTop elementRef={refApp} />
         </Container>
     )
 }
