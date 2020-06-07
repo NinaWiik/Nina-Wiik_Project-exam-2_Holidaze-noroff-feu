@@ -23,7 +23,7 @@ function Messages() {
   return (
     <Container fluid>
       <Row className="justify-content-md-center">
-        <Col md={5} xs={6}>
+        <Col md={5} xs={12}>
           <h1>Messages</h1>
           {messages.map(function (allMessages) {
             const { id, name, email, message } = allMessages;

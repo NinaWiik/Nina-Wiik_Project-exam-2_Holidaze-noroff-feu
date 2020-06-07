@@ -16,22 +16,22 @@ const schema = yup.object().shape({
     .required("Email is required"),
   maxGuests: yup
     .number()
-    .typeError("Please enter a number")
+    .typeError("Enter a number")
     .positive("The number cant include a minus")
     .required("A number is required"),
   price: yup
     .number()
-    .typeError("Please enter a number")
+    .typeError("Enter a number")
     .positive("The number cant include a minus")
     .required("A price is required"),
   lat: yup
     .number()
-    .typeError("Please enter a number")
+    .typeError("Enter a number")
     .positive("The number cant include a minus")
     .required("A number is required"),
   lng: yup
     .number()
-    .typeError("Please enter a number")
+    .typeError("Enter a number")
     .positive("The number cant include a minus")
     .required("A number is required"),
   image: yup.string().required("An absolute URL is required"),

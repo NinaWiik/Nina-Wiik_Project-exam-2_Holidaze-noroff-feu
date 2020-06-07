@@ -8,7 +8,14 @@
         background-color: $pink;
         border: 3px solid $darkPurple;
         color: $darkPurple;
-        margin-top: -100px;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler:hover {
+        text-decoration: none;
+        border: 3px solid $darkPurple;
+        outline: none;
     }
 
     a.nav-link.active,
@@ -17,19 +24,33 @@
         text-align: right;
     }
 
-    .ml-auto.navbar-nav {
-        margin-top: -100px;
+    .navbar-toggler {
+        margin-top: -130px;
+    }
+
+    .navbar-collapse {
+        margin-top: -130px;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 50px;
     }
 
     .logout__button {
         margin-left: 84%;
     }
 
-
+    .logo {
+        width: 450%;
+    }
 
     .nav-link {
-        font-size: 20px;
+        font-size: 25px;
         text-align: right;
+    }
+
+    .home__Row {
+        margin: 0;
     }
 
     .justify-content-md-center.row {
@@ -52,7 +73,8 @@
     // GLOBAL
 
     p {
-        font-size: 17px;
+        font-size: 18px;
+        letter-spacing: 0.3px;
     }
 
     .btn-primary {
@@ -66,6 +88,19 @@
 
     label {
         font-size: 20px;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    h6 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    h1 {
+        margin-top: 15px;
     }
 
     // ACCOMMODATION
@@ -90,6 +125,10 @@
     .contact__col,
     .register__col {
         padding-bottom: 60px;
+    }
+
+    .hotelCard__col--text {
+        border-left: none;
     }
 
 
@@ -127,12 +166,26 @@
         text-align: right;
     }
 
-    .navbar-toggler {
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler:hover {
+        text-decoration: none;
+        border: 2px solid $darkPurple;
+        outline: none;
+    }
+
+    .navbar-light .navbar-toggler {
         margin-top: -60px;
+        border: 2px solid $darkPurple;
+    }
+
+    .navbar-light .navbar-toggler {
+        background-color: $pink;
     }
 
     .logo {
         width: 250%;
+
     }
 
     .navbar-collapse {
@@ -141,5 +194,149 @@
 
     .navbar-light .navbar-brand {
         width: 50px;
+    }
+
+    .logout__button {
+        margin-left: 69%;
+    }
+
+    .container__footer {
+        margin-top: 20px;
+    }
+
+    .col__footer--middle {
+        display: none;
+    }
+
+    .image__footer--some {
+        width: 25%;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+    .home__Row {
+        margin: 0;
+    }
+
+    .bergen__cover {
+        height: 200px;
+        width: 600px;
+    }
+
+    .home__row--sub {
+        margin: 0 40px;
+    }
+
+    .paragraph__subscribe--title {
+        font-size: 12.5px;
+    }
+
+    .paragraph__subscribe--sub {
+        font-size: 15px;
+    }
+
+    input.subscribe__form--input.form-control {
+        width: 180px;
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    // GLOBAL
+
+    .btn-primary {
+        margin-bottom: 10px;
+        margin-top: 6px;
+    }
+
+    .modal-content {
+        margin: 0 10px;
+        height: 280px;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-footer {
+        padding-top: 0;
+        padding-bottom: 4px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .btn-danger {
+        margin-top: 6px;
+    }
+
+    .react-confirm-alert-body {
+        width: 95%;
+        margin: 0 10px;
+    }
+
+
+    // ACCOMMODATION
+
+    .hotelCard__col--text {
+        border-left: none;
+    }
+
+    .hotelsList__button--scroll {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .hotelDetail__image {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hotelDetails__button--inquiry {
+        width: 70%;
+    }
+
+    // ADMIN 
+
+    .errorMessage {
+        font-size: 14px
+    }
+
+    textarea.contact__formControl--text.form-control {
+        width: 95%;
+    }
+
+    .contact__col {
+        padding-bottom: 60px;
+    }
+
+    .register__col {
+        padding-bottom: 60px;
+        padding-left: 12px;
+    }
+
+    .dashboard__img {
+        display: none;
+    }
+
+    .addHotel__col,
+    .editHotel__col,
+    .contact__col {
+        padding-left: 15px;
+    }
+
+    .dashboard__col2 {
+        margin: 0 15px;
+    }
+
+    .addHotel__button--popover {
+        margin-top: 0;
     }
 }

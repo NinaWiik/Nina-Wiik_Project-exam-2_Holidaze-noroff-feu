@@ -53,7 +53,13 @@ function MakeEnquiry() {
   }, []);
 
   if (loading) {
-    return <Spinner animation="border" variant="info" />;
+    return (
+      <Row className="justify-content-md-center">
+        <Spinner animation="grow" size="lg" className="spinner">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
+      </Row>
+    );
   }
 
   async function onSubmit(data) {

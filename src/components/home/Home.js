@@ -65,7 +65,9 @@ function Home() {
           className="bergen__cover"
           alt="Bryggen in Bergen"
         />
-        <Subscribe />
+        <Row className="home__row--sub">
+          <Subscribe />
+        </Row>
       </Container>
     </>
   );

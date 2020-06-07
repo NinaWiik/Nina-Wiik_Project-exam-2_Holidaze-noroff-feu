@@ -10,9 +10,9 @@ function Dashboard() {
     <Container fluid>
       <Row className="justify-content-md-center">
         <Col className="col-md-6 dashboard__col1">
-          <h1>Admin - Dashboard</h1>
-          <Row>
-            <Col className="col-md-5">
+          <h6>Admin - Dashboard</h6>
+          <Row className="dashboard__row">
+            <Col md={5} className="dashboard__col--img">
               <img
                 src={Bergen3}
                 className="dashboard__img"
