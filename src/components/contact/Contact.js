@@ -13,7 +13,10 @@ const schema = yup.object().shape({
     .string()
     .email("Please enter a valid email")
     .required("Email is required"),
-  message: yup.string().required("You need to write something"),
+  message: yup
+    .string()
+    .required("You need to write something")
+    .min(10, "Include minimum 10 letters"),
 });
 
 function Contact() {

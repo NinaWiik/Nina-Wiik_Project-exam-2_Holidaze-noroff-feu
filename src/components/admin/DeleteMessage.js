@@ -29,7 +29,7 @@ function DeleteMessage(props) {
     const url = BASE_URL + "contacts/" + props.id;
     const options = { headers, method: DELETE };
     await fetch(url, options);
-    history.push("/admin/hotels");
+    history.push("/admin");
   }
 
   return (

@@ -121,6 +121,10 @@
         margin-top: 15px;
     }
 
+    .errorMessage {
+        font-size: 16px;
+    }
+
     // ACCOMMODATION
 
     h3 {
@@ -149,6 +153,13 @@
         border-left: none;
     }
 
+    .hotelDetails__button--inquiry {
+        width: 30%;
+    }
+
+    .hotelsList__button--scroll {
+        width: 15%;
+    }
 
     // ADMIN
 
@@ -159,7 +170,7 @@
     }
 
     .dashboard__img {
-        height: 340px;
+        height: 351px;
     }
 
     .dashboard__paragraph {
@@ -321,6 +332,10 @@
         margin: 0 10px;
     }
 
+    p {
+        margin-bottom: 12px;
+    }
+
 
     // ACCOMMODATION
 
@@ -340,6 +355,10 @@
 
     .hotelDetails__button--inquiry {
         width: 70%;
+    }
+
+    p.hotelCard__col--paragraph {
+        margin-bottom: 10px;
     }
 
     // ADMIN 
