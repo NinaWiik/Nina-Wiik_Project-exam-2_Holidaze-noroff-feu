@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Modal, Button } from "react-bootstrap";
 
 function ModalEnquiry(props) {
@@ -25,9 +24,5 @@ function ModalEnquiry(props) {
     </Modal>
   );
 }
-
-ModalEnquiry.propTypes = {
-  props: PropTypes.string.isRequired,
-};
 
 export default ModalEnquiry;

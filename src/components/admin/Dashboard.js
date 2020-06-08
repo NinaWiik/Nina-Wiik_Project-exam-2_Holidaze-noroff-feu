@@ -24,7 +24,7 @@ function Dashboard() {
                 Welcome to your dashboard. Here you can find all the hotel
                 listings. You can also manage the different hotels, or
                 add/delete hotels. You also have access to messages and
-                enquiries from customers.{" "}
+                enquiries from customers.
               </p>
 
               <NavLink to="/admin/hotels">

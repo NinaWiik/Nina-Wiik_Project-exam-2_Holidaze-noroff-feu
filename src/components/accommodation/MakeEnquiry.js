@@ -68,9 +68,10 @@ function MakeEnquiry() {
 
     fetch(url, options)
       .then((r) => r.json())
-      .then((j) => console.log(j));
+      .then((j) => {
+        setModalShow(true);
+      });
     console.log("data", data);
-    history.push(setModalShow(true));
   }
 
   return (

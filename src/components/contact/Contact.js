@@ -30,8 +30,6 @@ function Contact() {
   const url = BASE_URL + "establishments/" + id;
   const options = { headers };
 
-  const history = useHistory();
-
   useEffect(() => {
     fetch(url, options)
       .then((response) => response.json())
@@ -57,9 +55,10 @@ function Contact() {
 
     fetch(url, options)
       .then((r) => r.json())
-      .then((j) => console.log(j));
+      .then((j) => {
+        setModalShow(true);
+      });
     console.log("data", data);
-    history.push(setModalShow(true));
   }
 
   return (
