@@ -36,8 +36,26 @@
         width: 50px;
     }
 
+    .ml-auto.navbar-nav {
+        margin-bottom: 0;
+    }
+
     .logout__button {
-        margin-left: 84%;
+        margin-top: 12px;
+    }
+
+    a.nav-link__dashboard {
+        margin-right: 0;
+    }
+
+    .nav-link__admin {
+        width: 30%;
+        text-align: right;
+        margin-left: 70%;
+        background-color: $lightPurple;
+        font-size: 25px;
+        padding: 8px 0;
+
     }
 
     .logo {
@@ -196,8 +214,29 @@
         width: 50px;
     }
 
-    .logout__button {
-        margin-left: 69%;
+    .ml-auto.navbar-nav {
+        margin-bottom: 0;
+    }
+
+    button.logout__button.btn.btn-primary {
+        margin-top: 12px;
+        font-size: 12px;
+        width: 84%;
+    }
+
+    a.nav-link__dashboard {
+        margin-right: 0;
+    }
+
+
+    .nav-link__admin {
+        text-align: right;
+        margin-left: 63%;
+        background-color: $lightPurple;
+        font-size: 15px;
+        padding: 8px 0;
+        margin-right: 0;
+
     }
 
     .container__footer {
