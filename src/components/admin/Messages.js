@@ -28,8 +28,8 @@ function Messages() {
           {messages.map(function (allMessages) {
             const { id, name, email, message } = allMessages;
             return (
-              <Row>
-                <Col md={12} key={allMessages.id}>
+              <Row key={allMessages.id}>
+                <Col md={12}>
                   <MessageItem
                     id={id}
                     name={name}

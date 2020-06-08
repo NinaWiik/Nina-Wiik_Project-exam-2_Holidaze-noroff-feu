@@ -118,9 +118,9 @@ function AddHotel() {
                   <Form.Label>Price</Form.Label>
                   <div className="makeEnquiry__popover">
                     <OverlayTrigger
-                      trigger="hover"
                       placement="right"
                       overlay={popover}
+                      trigger={["hover", "hover"]}
                     >
                       <Button className="addHotel__button--popover">i</Button>
                     </OverlayTrigger>
@@ -141,9 +141,9 @@ function AddHotel() {
                   <Form.Label>Latitude</Form.Label>
                   <div className="makeEnquiry__popover">
                     <OverlayTrigger
-                      trigger="hover"
                       placement="right"
                       overlay={popoverLatitude}
+                      trigger={["hover", "hover"]}
                     >
                       <Button className="addHotel__button--popover">i</Button>
                     </OverlayTrigger>
@@ -162,9 +162,9 @@ function AddHotel() {
                   <Form.Label>Longitude</Form.Label>
                   <div className="makeEnquiry__popover">
                     <OverlayTrigger
-                      trigger="hover"
                       placement="right"
                       overlay={popoverLatitude}
+                      trigger={["hover", "hover"]}
                     >
                       <Button className="addHotel__button--popover">i</Button>
                     </OverlayTrigger>

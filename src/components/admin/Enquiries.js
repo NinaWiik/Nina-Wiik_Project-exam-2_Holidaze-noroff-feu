@@ -28,8 +28,8 @@ function Enquiries() {
           {enquiries.map(function (enquiry) {
             const { id, name, email, checkIn, checkOut } = enquiry;
             return (
-              <Row>
-                <Col md={12} key={enquiry.id}>
+              <Row key={enquiry.id}>
+                <Col md={12}>
                   <EnquiriesItem
                     id={id}
                     name={name}

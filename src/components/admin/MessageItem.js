@@ -41,7 +41,7 @@ function MessageItem({ id, name, email, message }) {
 }
 
 MessageItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,

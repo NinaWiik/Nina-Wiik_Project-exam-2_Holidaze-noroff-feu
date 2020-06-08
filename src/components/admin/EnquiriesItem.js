@@ -41,11 +41,11 @@ function EnquiriesItem({ id, name, email, checkIn, checkOut }) {
 }
 
 EnquiriesItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
-  checkIn: PropTypes.number.isRequired,
-  checkOut: PropTypes.number.isRequired,
+  checkIn: PropTypes.string.isRequired,
+  checkOut: PropTypes.string.isRequired,
 };
 
 export default EnquiriesItem;

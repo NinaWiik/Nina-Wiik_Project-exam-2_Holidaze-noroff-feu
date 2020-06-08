@@ -62,8 +62,8 @@ function Hotels() {
             description,
           } = hotel;
           return (
-            <Row>
-              <Col key={hotel.id}>
+            <Row key={hotel.id}>
+              <Col>
                 <HotelsItem
                   id={id}
                   image={image}
