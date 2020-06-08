@@ -28,7 +28,7 @@ function Register() {
     <Container className="register__container" fluid>
       <Row className="justify-content-md-center">
         <Col className="col-md-5">
-          <h1>Login</h1>
+          <h2>Login</h2>
           <div className="register__col">
             <p className="register__paragraph">
               Please login with your username to get access to the

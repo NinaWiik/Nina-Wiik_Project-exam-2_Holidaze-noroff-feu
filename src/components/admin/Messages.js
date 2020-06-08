@@ -24,7 +24,7 @@ function Messages() {
     <Container fluid>
       <Row className="justify-content-md-center">
         <Col md={5} xs={12}>
-          <h1>Messages</h1>
+          <h2>Messages</h2>
           {messages.map(function (allMessages) {
             const { id, name, email, message } = allMessages;
             return (

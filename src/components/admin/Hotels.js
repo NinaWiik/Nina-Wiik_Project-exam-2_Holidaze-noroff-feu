@@ -50,7 +50,7 @@ function Hotels() {
   return (
     <Container className="hotels__container">
       <div ref={refApp}>
-        <h1>Hotels</h1>
+        <h2>Accommodation List</h2>
         {hotels.map(function (hotel) {
           const {
             id,

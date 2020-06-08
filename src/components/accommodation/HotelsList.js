@@ -77,7 +77,7 @@ function HotelsList() {
   return (
     <Container>
       <div className="hotelsList__search" ref={refApp}>
-        <h1>Hotels</h1>
+        <h1>Accommodation</h1>
         <div>
           <Search makeSearch={handleSearch} />
           {displayResults()}
