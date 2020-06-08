@@ -31,4 +31,15 @@ textarea.form-control {
 .logout__button {
     width: 130px;
     padding-top: 4px;
+    float: right;
+    margin-top: 0px;
+    background-color: $darkPurple;
+    color: $pink;
+    border: 3px solid $pink;
+}
+
+.logout__button:hover {
+    background-color: $pink;
+    color: $darkPurple;
+    border: 3px solid $darkPurple;
 }

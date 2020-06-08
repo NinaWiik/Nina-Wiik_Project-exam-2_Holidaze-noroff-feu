@@ -53,14 +53,25 @@
     margin-top: 10px;
 }
 
-a.nav-link__dashboard {
-    border-left: 5px solid $darkPurple;
-    border-bottom: 5px solid $darkPurple;
+.nav-link__admin {
+    background-color: rgba($color: #7C7384, $alpha: 0.6);
     padding-left: 10px;
-    margin-top: 8px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+a.nav-link__dashboard {
     margin-right: 20px;
 }
 
 a.nav-link__dashboard.active {
-    color: $mediumPurple;
+    color: $darkPurple;
+    text-decoration: underline;
+}
+
+a.nav-link__dashboard:hover {
+    text-decoration: underline;
+    color: $darkPurple;
 }

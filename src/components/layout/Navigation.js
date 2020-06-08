@@ -26,11 +26,13 @@ function Navigation() {
 
           {user ? (
             <>
-              <NavLink to="/admin" className="nav-link__dashboard">
-                Dashboard
-              </NavLink>
+              <div className="nav-link__admin">
+                <NavLink to="/admin" className="nav-link__dashboard">
+                  Dashboard
+                </NavLink>
 
-              <Logout />
+                <Logout />
+              </div>
             </>
           ) : (
             <>
