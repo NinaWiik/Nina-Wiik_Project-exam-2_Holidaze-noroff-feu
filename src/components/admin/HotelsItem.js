@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Col, Row, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
@@ -40,5 +41,15 @@ function HotelsItem({
     </Container>
   );
 }
+
+HotelsItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  selfCatering: PropTypes.bool.isRequired,
+  maxGuests: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default HotelsItem;

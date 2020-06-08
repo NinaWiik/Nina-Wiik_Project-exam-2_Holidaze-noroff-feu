@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import GoogleMaps from "simple-react-google-maps";
 
 function MapsGoogle({ latitude, longitude }) {
@@ -12,5 +13,10 @@ function MapsGoogle({ latitude, longitude }) {
     />
   );
 }
+
+MapsGoogle.propTypes = {
+  latitude: PropTypes.number.isRequired,
+  longitude: PropTypes.number.isRequired,
+};
 
 export default MapsGoogle;

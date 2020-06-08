@@ -13,9 +13,9 @@ function Footer() {
         <Row>
           <Col className="col__footer--left">
             <h5>Our Address</h5>
-            <p className="paragraph__footer--left">Holidaze</p>
             <p className="paragraph__footer--left">Dreggsallmenningen 1,</p>
             <p className="paragraph__footer--left">5003 Bergen</p>
+            <p className="paragraph__footer--left">Tel: +47 123 45 678</p>
           </Col>
           <Col className="col__footer--middle">
             <p className="paragraph__footer--middle">

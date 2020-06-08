@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
 import { confirmAlert } from "react-confirm-alert";
 import { Button } from "react-bootstrap";
@@ -28,7 +29,7 @@ function DeleteMessage(props) {
     const url = BASE_URL + "contacts/" + props.id;
     const options = { headers, method: DELETE };
     await fetch(url, options);
-    history.go();
+    history.push("/admin/hotels");
   }
 
   return (
@@ -37,5 +38,9 @@ function DeleteMessage(props) {
     </Button>
   );
 }
+
+DeleteMessage.propTypes = {
+  props: PropTypes.func.isRequired,
+};
 
 export default DeleteMessage;

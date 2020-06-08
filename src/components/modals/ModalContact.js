@@ -1,6 +1,6 @@
 import React from "react";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import PropTypes from "prop-types";
+import { Modal, Button } from "react-bootstrap";
 
 function ModalContact(props) {
   return (
@@ -25,5 +25,9 @@ function ModalContact(props) {
     </Modal>
   );
 }
+
+ModalContact.propTypes = {
+  props: PropTypes.string.isRequired,
+};
 
 export default ModalContact;

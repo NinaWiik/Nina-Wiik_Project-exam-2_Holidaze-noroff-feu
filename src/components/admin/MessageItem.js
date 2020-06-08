@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Col, Row, Container, Button } from "react-bootstrap";
 import DeleteMessage from "./DeleteMessage";
 
@@ -38,5 +39,12 @@ function MessageItem({ id, name, email, message }) {
     </Container>
   );
 }
+
+MessageItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+};
 
 export default MessageItem;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
@@ -26,5 +27,9 @@ function ModalSub(props) {
     </Modal>
   );
 }
+
+ModalSub.propTypes = {
+  props: PropTypes.string.isRequired,
+};
 
 export default ModalSub;

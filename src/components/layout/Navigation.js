@@ -26,8 +26,8 @@ function Navigation() {
 
           {user ? (
             <>
-              <NavLink to="/admin" className="nav-link">
-                Admin
+              <NavLink to="/admin" className="nav-link__dashboard">
+                Dashboard
               </NavLink>
 
               <Logout />

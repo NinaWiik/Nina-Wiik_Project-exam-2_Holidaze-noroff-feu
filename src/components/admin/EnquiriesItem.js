@@ -1,6 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Col, Row, Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import DeleteEnquiry from "./DeleteEnquiry";
 import moment from "moment";
 
@@ -39,5 +39,13 @@ function EnquiriesItem({ id, name, email, checkIn, checkOut }) {
     </Container>
   );
 }
+
+EnquiriesItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  checkIn: PropTypes.number.isRequired,
+  checkOut: PropTypes.number.isRequired,
+};
 
 export default EnquiriesItem;

@@ -10,7 +10,7 @@ function Dashboard() {
     <Container fluid>
       <Row className="justify-content-md-center">
         <Col className="col-md-6 dashboard__col1">
-          <h6>Admin - Dashboard</h6>
+          <h1>Dashboard</h1>
           <Row className="dashboard__row">
             <Col md={5} className="dashboard__col--img">
               <img
@@ -30,14 +30,14 @@ function Dashboard() {
               <NavLink to="/admin/hotels">
                 <Button className="dashboard__button">
                   <FaHotel />
-                  List Hotels
+                  Accommodations List
                 </Button>
               </NavLink>
 
               <NavLink to="/admin/hotels/add">
                 <Button className="dashboard__button">
                   <MdAddCircle />
-                  Add Hotel
+                  Add Accommodation
                 </Button>
               </NavLink>
 
