@@ -88,6 +88,12 @@
         font-size: 1em;
     }
 
+    button.logout__button {
+        width: 180px;
+        font-size: 20px;
+        height: 50px;
+    }
+
     // GLOBAL
 
     p {
@@ -123,6 +129,14 @@
 
     .errorMessage {
         font-size: 16px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    svg {
+        font-size: 25px;
     }
 
     // ACCOMMODATION
@@ -334,6 +348,10 @@
 
     p {
         margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 17px;
     }
 
 
