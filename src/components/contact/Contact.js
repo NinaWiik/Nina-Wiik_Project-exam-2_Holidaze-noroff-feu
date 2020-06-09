@@ -4,7 +4,7 @@ import * as yup from "yup";
 import { Button, Form, Container, Row, Col, Spinner } from "react-bootstrap";
 import ErrorMessage from "./ErrorMessage";
 import { BASE_URL, headers } from "../../constants/Api";
-import { useHistory, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ModalContact from "../modals/ModalContact";
 
 const schema = yup.object().shape({
