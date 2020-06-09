@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import { Button, Form, Container, Row, Col, Spinner } from "react-bootstrap";
+import { Button, Form, Container, Row, Col } from "react-bootstrap";
 import ErrorMessage from "./ErrorMessage";
 import { BASE_URL, headers } from "../../constants/Api";
-import { useParams } from "react-router-dom";
 import ModalContact from "../modals/ModalContact";
 
 const schema = yup.object().shape({
@@ -24,29 +23,6 @@ function Contact() {
   const { register, handleSubmit, errors } = useForm({
     validationSchema: schema,
   });
-  const [loading, setLoading] = useState(true);
-
-  let { id } = useParams();
-  const url = BASE_URL + "establishments/" + id;
-  const options = { headers };
-
-  useEffect(() => {
-    fetch(url, options)
-      .then((response) => response.json())
-      .then((json) => setLoading(json))
-      .catch((error) => console.log(error))
-      .finally(() => setLoading(false));
-  }, []);
-
-  if (loading) {
-    return (
-      <Row className="justify-content-md-center">
-        <Spinner animation="grow" size="lg" className="spinner">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      </Row>
-    );
-  }
 
   async function onSubmit(data) {
     const url = BASE_URL + "contacts";
