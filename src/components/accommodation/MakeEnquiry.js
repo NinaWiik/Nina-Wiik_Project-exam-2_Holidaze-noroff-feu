@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import * as yup from "yup";
-import { useHistory, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { BASE_URL, headers } from "../../constants/Api";
 import { Container, Button, Form, Col, Row } from "react-bootstrap";
 import Spinner from "react-bootstrap/Spinner";
@@ -42,14 +42,13 @@ function MakeEnquiry() {
   const url = BASE_URL + "establishments/" + id;
   const options = { headers };
 
-  const history = useHistory();
-
   useEffect(() => {
     fetch(url, options)
       .then((response) => response.json())
       .then((json) => makeInquiry(json))
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (loading) {

@@ -47,7 +47,7 @@ HotelsItem.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-  selfCatering: PropTypes.bool.isRequired,
+  selfCatering: PropTypes.bool,
   maxGuests: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
 };
