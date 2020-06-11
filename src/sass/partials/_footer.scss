@@ -1,4 +1,4 @@
-.container__footer {
+.footer__container {
     background-color: white;
     margin-top: 4em;
     padding-top: 20px;
@@ -8,30 +8,28 @@
     width: 100%;
 }
 
-.paragraph__footer--left {
+.footer__paragraph--left {
     font-size: 0.8em;
     margin-bottom: 5px;
     font-family: 'CaviarDreams', arial, sans-serif;
     font-weight: bold;
 }
 
-.paragraph__footer--middle {
+.footer__paragraph--middle {
     text-align: center;
     font-family: 'CaviarDreams', arial, sans-serif;
     font-weight: bold;
     padding-top: 12%;
 }
 
-.image__footer--some {
-    width: 10%;
-    margin: 5px;
-}
 
-.image__footer--some:hover {
-    background-color: $darkPurple;
-    border-radius: 50%;
-}
 
-.col__footer--right {
+.footer__col--right {
     text-align: right;
+}
+
+.footer__anchor {
+    font-size: 50px;
+    margin-right: 7px;
+    margin-top: 10px;
 }
