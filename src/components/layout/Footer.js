@@ -2,9 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Insta from "../../assets/socialmedia/insta.png";
-import Facebook from "../../assets/socialmedia/fb.png";
-import Twitter from "../../assets/socialmedia/twitter.png";
 import { FaTwitter, FaFacebookSquare, FaInstagram } from "react-icons/fa";
 
 function Footer() {
