@@ -24,10 +24,10 @@ function Subscribe() {
   }
 
   return (
-    <Container fluid className="container__cover">
-      <Row className="justify-content-md-center">
-        <Col className="subscribe__col" md={4} xs={12}>
-          <Col>
+    <Container>
+      <Row className="justify-content-md-center subscribe__row">
+        <div className="subscribe__col" md={4} xs={12}>
+          <div>
             <p className="paragraph__subscribe--title">
               Subscribe on our newsletter
             </p>
@@ -35,7 +35,7 @@ function Subscribe() {
               Get exclusive offers straight in your mailbox
             </p>
             {modalShow && <ModalSub show={modalShow} />}
-          </Col>
+          </div>
           <Row className="justify-content-md-center">
             <Form inline onSubmit={handleSubmit(onSubmit)}>
               <Form.Group>
@@ -52,12 +52,12 @@ function Subscribe() {
               <ModalSub show={modalShow} onHide={() => setModalShow(false)} />
             </Form>
           </Row>
-          <Col className="subscribe__col--error">
+          <div className="subscribe__col--error">
             {errors.email && (
               <ErrorMessageSub>{errors.email.message}</ErrorMessageSub>
             )}
-          </Col>
-        </Col>
+          </div>
+        </div>
       </Row>
     </Container>
   );

@@ -37,6 +37,7 @@
     padding: 20px 0;
     border: 3px solid $pink;
     border-radius: 10px;
+    width: 500px;
 }
 
 .subscribe__col--error {
@@ -44,7 +45,7 @@
 }
 
 input.subscribe__form--input.form-control {
-    width: 300px;
+    width: 100%;
     margin-right: 15px;
     margin-top: 5px;
 }

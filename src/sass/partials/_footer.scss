@@ -1,35 +1,33 @@
 .footer__container {
-    background-color: white;
-    margin-top: 4em;
-    padding-top: 20px;
-    border-top: 2px solid $darkPurple;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background-color: white;
+  margin-top: 4em;
+  padding-top: 20px;
+  border-top: 2px solid $darkPurple;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__paragraph--left {
-    font-size: 0.8em;
-    margin-bottom: 5px;
-    font-family: 'CaviarDreams', arial, sans-serif;
-    font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  font-family: "CaviarDreams", arial, sans-serif;
+  font-weight: bold;
 }
 
 .footer__paragraph--middle {
-    text-align: center;
-    font-family: 'CaviarDreams', arial, sans-serif;
-    font-weight: bold;
-    padding-top: 12%;
+  text-align: center;
+  font-family: "CaviarDreams", arial, sans-serif;
+  font-weight: bold;
+  padding-top: 12%;
 }
 
-
-
 .footer__col--right {
-    text-align: right;
+  text-align: right;
 }
 
 .footer__anchor {
-    font-size: 50px;
-    margin-right: 7px;
-    margin-top: 10px;
+  font-size: 50px;
+  margin-right: 7px;
+  margin-top: 10px;
 }
