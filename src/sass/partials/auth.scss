@@ -1,9 +1,11 @@
+////// REGISTER ///////
+
 .register__col {
     background-color: $mediumPurple;
     padding: 20px 0 50px 30px;
     border: 3px solid $darkPurple;
     color: $white;
-    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-family: $textFont;
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 2px;
@@ -27,6 +29,8 @@ textarea.form-control {
     width: 95%;
     margin-bottom: 5px;
 }
+
+////// LOGOUT ///////
 
 .logout__button {
     width: 130px;

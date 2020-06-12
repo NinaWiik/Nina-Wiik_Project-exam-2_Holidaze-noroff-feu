@@ -1,3 +1,5 @@
+////// MAKE ENQUIRY ///////
+
 .makeEnquiry__form {
     background-color: $mediumPurple;
     padding: 20px 0 60px 30px;
@@ -6,13 +8,11 @@
     color: white;
 }
 
-.enquiriesItem__row {
-    background-color: $mediumPurple;
-    margin-bottom: 40px;
-    color: white;
-    padding-top: 10px;
-    border: 2px solid $darkPurple;
-    border-radius: 5px;
+.makeEnquiry__popover {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 16px;
 }
 
 input.form-control.check {
@@ -21,6 +21,17 @@ input.form-control.check {
 
 .makeEnquiry__formLabel {
     margin-right: 20px;
+}
+
+////// ENQUIRIES ITEM ///////
+
+.enquiriesItem__row {
+    background-color: $mediumPurple;
+    margin-bottom: 40px;
+    color: white;
+    padding-top: 10px;
+    border: 2px solid $darkPurple;
+    border-radius: 5px;
 }
 
 .enquiriesItem__row--buttons {
@@ -41,12 +52,12 @@ input.form-control.check {
 }
 
 .enquiriesItem__button--delete {
-    background-color: #341A3D;
-    color: #FF519B;
+    background-color: $darkPurple;
+    color: $pink;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 3px solid #FF519B;
+    border: 3px solid $pink;
     width: 7em;
     float: right;
     margin-right: 13px;

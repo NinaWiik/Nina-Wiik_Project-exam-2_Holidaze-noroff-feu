@@ -1,8 +1,9 @@
+////// DASHBOARD ///////
+
 .dashboard__img {
     width: 100%;
     @include pictureBorder;
 }
-
 
 .dashboard__col2 {
     font-weight: bold;
@@ -31,6 +32,8 @@ button.dashboard__button:hover {
     border: 3px solid $darkPurple;
 }
 
+////// EDIT HOTEL ///////
+
 input.editHotel__formControl--price {
     width: 3em;
     margin: 0 10px;
@@ -48,24 +51,35 @@ input.editHotel__formControl--catering {
     color: white;
 }
 
+////// FORMS ///////
+
 
 label {
-    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-family: $textFont;
     letter-spacing: 1.5px;
     font-weight: bold;
 }
 
 input.form-control,
 textarea.form-control {
-    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-family: $textFont;
     letter-spacing: 1.5px;
     font-weight: bold;
     font-size: 14px;
 }
 
+input.form-control {
+    margin-right: 0;
+}
+
+.form-row {
+    margin-right: 12px;
+}
+
+////// DELETE CONFIRM ///////
+
 .react-confirm-alert-body {
-    background: rgb(124, 115, 132);
-    background: linear-gradient(145deg, rgba(124, 115, 132, 1) 35%, rgba(52, 26, 61, 1) 100%);
+    background: $gradient;
     border: 2px solid $pink;
 }
 
@@ -80,9 +94,8 @@ textarea.form-control {
     background-color: $darkPurple;
     border: 2px solid $pink;
     text-transform: uppercase;
-    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-family: $textFont;
     font-weight: bold;
-
 }
 
 .react-confirm-alert-button-group {
@@ -94,6 +107,7 @@ textarea.form-control {
     background-color: rgba($color: #000000, $alpha: 0.8);
 }
 
+////// ADD HOTEL ///////
 
 .addHotel__col {
     background-color: $mediumPurple;
@@ -128,16 +142,15 @@ textarea.form-control {
     box-shadow: none !important;
 }
 
-input.form-control {
-    margin-right: 0;
+.addHotel__validated--text {
+    font-family: $headerFont;
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+    margin-bottom: 10px;
 }
 
-.makeEnquiry__popover {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    height: 16px;
-}
+////// MESSAGE ITEM ///////
 
 .messageItem__row--first {
     background-color: $mediumPurple;
@@ -169,12 +182,12 @@ input.form-control {
 }
 
 .messageItem__button--delete {
-    background-color: #341A3D;
-    color: #FF519B;
+    background-color: $darkPurple;
+    color: $pink;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border: 3px solid #FF519B;
+    border: 3px solid $pink;
     width: 7em;
     float: right;
     margin-right: 13px;
@@ -203,13 +216,13 @@ a.messageItem__col--email:hover {
     text-decoration: underline;
 }
 
-.form-row {
-    margin-right: 12px;
-}
+////// DELETE HOTEL///////
 
 .deleteHotel__button--delete {
     background-color: $pink;
 }
+
+////// SVG ///////
 
 svg {
     font-size: 20px;

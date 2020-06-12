@@ -55,7 +55,6 @@
         background-color: $lightPurple;
         font-size: 25px;
         padding: 8px 0;
-
     }
 
     .logo {
@@ -71,20 +70,52 @@
         margin: 0;
     }
 
-    .justify-content-md-center.row {
-        margin-right: -350px;
-        margin-left: -350px;
+    .paragraph__subscribe--title {
+        font-size: 22px;
+        color: white;
     }
 
-    .image__footer--some {
-        width: 20%;
+    .paragraph__subscribe--sub {
+        font-size: 21px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .errorMessageSub {
+        margin-right: 58px;
+        font-size: 18px;
+    }
+
+    input.subscribe__form--input.form-control {
+        margin-bottom: 10px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .justify-content-md-center {
+        margin: 0 auto;
+    }
+
+    .subscribe__col {
+        margin-bottom: 20px;
+    }
+
+    button.subscribe__button {
+        margin-bottom: 0;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border-radius: 5px;
     }
 
     h5 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    .paragraph__footer--left {
+    .footer__anchor {
+        margin-right: 4px;
+    }
+
+    .footer__paragraph--left {
         font-size: 1em;
     }
 
@@ -139,6 +170,10 @@
         font-size: 25px;
     }
 
+    .contact__col {
+        padding-left: 15px;
+    }
+
     // ACCOMMODATION
 
     h3 {
@@ -147,6 +182,7 @@
 
     .hotelCard__col--img {
         height: 255px;
+        border-right: 3px solid $darkPurple;
     }
 
     p.hotelCard__col--paragraph {
@@ -198,6 +234,14 @@
     .addHotel__button--popover {
         width: 20px;
     }
+
+    .enquiries__col {
+        padding: 0;
+    }
+
+    .messages__col {
+        padding: 0;
+    }
 }
 
 // PHONE
@@ -228,7 +272,6 @@
 
     .logo {
         width: 250%;
-
     }
 
     .navbar-collapse {
@@ -253,7 +296,6 @@
         margin-right: 0;
     }
 
-
     .nav-link__admin {
         text-align: right;
         margin-left: 63%;
@@ -261,23 +303,23 @@
         font-size: 15px;
         padding: 8px 0;
         margin-right: 0;
-
     }
 
-    .container__footer {
+    .footer__container {
         margin-top: 20px;
     }
 
-    .col__footer--middle {
+    .footer__col--middle {
         display: none;
     }
 
-    .image__footer--some {
-        width: 25%;
+    .footer__anchor {
+        font-size: 42px;
+        margin-right: 4px;
     }
 
     h5 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .home__Row {
@@ -295,16 +337,23 @@
 
     .paragraph__subscribe--title {
         font-size: 12.5px;
+        color: white;
     }
 
     .paragraph__subscribe--sub {
         font-size: 15px;
+        color: white;
+    }
+
+    .errorMessageSub {
+        margin-left: 0;
+        margin-right: 27.5%;
     }
 
     input.subscribe__form--input.form-control {
         width: 180px;
-        margin-left: 25px;
-        margin-right: 10px;
+        margin: 0 10px 4px 25px;
+        height: 38px;
     }
 
     .form-group {
@@ -354,11 +403,14 @@
         font-size: 17px;
     }
 
-
     // ACCOMMODATION
 
     .hotelCard__col--text {
         border-left: none;
+    }
+
+    .hotelCard__col--img {
+        border-bottom: 3px solid $darkPurple;
     }
 
     .hotelsList__button--scroll {
@@ -379,10 +431,10 @@
         margin-bottom: 10px;
     }
 
-    // ADMIN 
+    // ADMIN
 
     .errorMessage {
-        font-size: 14px
+        font-size: 14px;
     }
 
     textarea.contact__formControl--text.form-control {
@@ -414,5 +466,9 @@
 
     .addHotel__button--popover {
         margin-top: 0;
+    }
+
+    .addHotel__validated--text {
+        font-size: 15px;
     }
 }

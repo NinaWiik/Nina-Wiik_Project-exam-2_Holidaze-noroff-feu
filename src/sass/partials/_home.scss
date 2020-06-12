@@ -51,7 +51,7 @@ input.subscribe__form--input.form-control {
 }
 
 .paragraph__subscribe--title {
-    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    font-family: $headerFont;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3.5px;
@@ -59,7 +59,7 @@ input.subscribe__form--input.form-control {
 }
 
 .paragraph__subscribe--sub {
-    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    font-family: $headerFont;
     padding-top: 0px;
 }
 
@@ -77,7 +77,7 @@ input.subscribe__form--input.form-control {
     margin-right: 20%;
     margin-left: 20%;
     color: $white;
-    font-family: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    font-family: $headerFont;
     font-weight: bold;
 
 }
@@ -85,7 +85,7 @@ input.subscribe__form--input.form-control {
 .modal__sub--header {
     font-size: 24px;
     color: white;
-    font-family: 'CenturyGothic', Arial, Helvetica, sans-serif;
+    font-family: $textFont;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -96,10 +96,6 @@ input.subscribe__form--input.form-control {
 
 .modal-footer {
     border: none;
-}
-
-button.close {
-    color: $white;
 }
 
 .modal__sub--button {
@@ -115,6 +111,10 @@ button.close {
     background-color: $pink;
     border: 2px solid $darkPurple;
     color: $darkPurple;
+}
+
+button.close {
+    color: $white;
 }
 
 .errorMessageSub {

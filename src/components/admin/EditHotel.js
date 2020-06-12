@@ -56,6 +56,7 @@ function EditHotel() {
     validationSchema: schema,
   });
   const [hotel, setHotel] = useState(defaultState);
+  const [validated, setValidated] = useState(false);
 
   let { id } = useParams();
 
@@ -67,6 +68,7 @@ function EditHotel() {
       .then((response) => response.json())
       .then((json) => setHotel(json))
       .catch((error) => console.log(error));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function onSubmit(data) {
@@ -78,7 +80,10 @@ function EditHotel() {
       body: JSON.stringify(data),
     };
     await fetch(fetchUrl, updateOptions);
-    history.push("/admin/hotels");
+    setValidated(true);
+    setTimeout(() => {
+      history.push("/admin/hotels");
+    }, 2000);
   }
 
   return (
@@ -197,6 +202,14 @@ function EditHotel() {
                   <ErrorMessage>{errors.description.message}</ErrorMessage>
                 )}
               </Form.Group>
+
+              {validated && (
+                <div>
+                  <div className="addHotel__validated--text">
+                    Accommodation has been updated
+                  </div>
+                </div>
+              )}
 
               <Button type="submit">Update</Button>
               <DeleteHotel id={id} />

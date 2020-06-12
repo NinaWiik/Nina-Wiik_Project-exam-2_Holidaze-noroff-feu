@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 import * as yup from "yup";
@@ -42,7 +42,7 @@ function AddHotel() {
   const { register, handleSubmit, errors } = useForm({
     validationSchema: schema,
   });
-
+  const [validated, setValidated] = useState(false);
   const history = useHistory();
 
   async function onSubmit(data) {
@@ -53,8 +53,10 @@ function AddHotel() {
     const options = { headers, method: "POST", body: JSON.stringify(data) };
 
     await fetch(url, options);
-
-    history.push("/admin/hotels");
+    setValidated(true);
+    setTimeout(() => {
+      history.push("/admin/hotels");
+    }, 2000);
   }
 
   const popover = (
@@ -205,6 +207,13 @@ function AddHotel() {
                   <ErrorMessage>{errors.description.message}</ErrorMessage>
                 )}
               </Form.Group>
+              {validated && (
+                <div className="addHotel__validated">
+                  <div className="addHotel__validated--text">
+                    Accommodation has been added!
+                  </div>
+                </div>
+              )}
 
               <Button type="submit">Submit</Button>
             </div>

@@ -1,3 +1,4 @@
+////// HOTEL CARD ///////
 .hotelCard__col--img {
     float: left;
     width: 100%;
@@ -7,6 +8,25 @@
     padding: 0;
 }
 
+.hotelCard__row {
+    background-color: $mediumPurple;
+    border: 3px solid $darkPurple;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hotelCard__col--text {
+    margin: 10px 20px;
+    border-left: 2px solid $darkPurple;
+    margin: 0;
+}
+
+.hotelCard__hotelsItem--col {
+    padding: 0;
+}
+
+////// HOTEL DETAIL///////
 
 .hotelDetail__row {
     margin: 15px 0;
@@ -61,6 +81,8 @@ a.hotelDetail__col--mail:hover {
     margin-top: 20px;
 }
 
+////// SEARCH ///////
+
 .search__input {
     width: 100%;
     margin-bottom: 20px;
@@ -71,29 +93,9 @@ a.hotelDetail__col--mail:hover {
     border: 3px solid $darkPurple;
 }
 
-.hotelCard__row {
-    background-color: $mediumPurple;
-    border: 3px solid $darkPurple;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.hotelCard__col--text {
-    margin: 10px 20px;
-    border-left: 2px solid black;
-    margin: 0;
-}
-
-.hotelCard__col--img {
-    width: 100%;
-}
+////// HOTELS LIST ///////
 
 .hotelsList__col {
-    padding: 0;
-}
-
-.hotelCard__hotelsItem--col {
     padding: 0;
 }
 
@@ -102,8 +104,7 @@ a.hotelDetail__col--mail:hover {
     font-size: 2em;
     padding: 5px 10px;
     font-weight: bold;
-    background: rgb(255, 81, 155);
-    background: linear-gradient(151deg, rgba(255, 81, 155, 1) 58%, rgba(255, 255, 255, 0) 100%);
+    background: $gradientError;
     display: inline;
     border-radius: 5px;
 }
@@ -111,6 +112,8 @@ a.hotelDetail__col--mail:hover {
 .hotelsList__button--scroll {
     width: 15%;
 }
+
+////// SPINNER ///////
 
 .spinner {
     color: $pink;
