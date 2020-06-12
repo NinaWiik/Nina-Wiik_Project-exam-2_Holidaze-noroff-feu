@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
 import { confirmAlert } from "react-confirm-alert";
 import Button from "react-bootstrap/Button";
@@ -39,9 +38,5 @@ function DeleteHotel(props) {
     </Button>
   );
 }
-
-DeleteHotel.propTypes = {
-  props: PropTypes.func.isRequired,
-};
 
 export default DeleteHotel;
