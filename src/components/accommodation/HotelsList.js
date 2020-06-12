@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BASE_URL, headers } from "../../constants/Api";
 import HotelCard from "./HotelCard";
-import { Col, Row, Button } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Spinner from "react-bootstrap/Spinner";
+import { Col, Row, Button, Spinner, Container } from "react-bootstrap";
 import Search from "../search/Search";
 
 const BackToTop = function ({ elementRef }) {

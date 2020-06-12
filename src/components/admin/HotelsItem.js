@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 
 function HotelsItem({
   id,

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Row, Col, Container, Button } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
+import { Row, Col, Container, Button, Image, Spinner } from "react-bootstrap";
 import { BASE_URL, headers } from "../../constants/Api";
 import { Link } from "react-router-dom";
-import Spinner from "react-bootstrap/Spinner";
 import MapsGoogle from "../googleMaps/MapsGoogle";
 
 function HotelDetail() {

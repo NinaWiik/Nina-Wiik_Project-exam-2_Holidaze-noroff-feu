@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
 import { BASE_URL, headers, PATCH } from "../../constants/Api";
 import DeleteHotel from "./DeleteHotel";

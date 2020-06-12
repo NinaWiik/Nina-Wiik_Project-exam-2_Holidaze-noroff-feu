@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
 import * as yup from "yup";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import { BASE_URL, headers } from "../../constants/Api";
-import { OverlayTrigger, Popover, Container, Row, Col } from "react-bootstrap";
+import {
+  OverlayTrigger,
+  Popover,
+  Container,
+  Row,
+  Col,
+  Button,
+  Form,
+} from "react-bootstrap";
 import ErrorMessage from "../contact/ErrorMessage";
 
 const schema = yup.object().shape({
