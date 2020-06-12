@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Button, Col, Row } from "react-bootstrap";
+import { Container, Form, Button, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import ErrorMessageSub from "../contact/ErrorMessageSub";
