@@ -121,7 +121,7 @@ function MakeEnquiry() {
                   <Controller
                     as={ReactDatePicker}
                     control={control}
-                    dateFormat="yyyy/MM/dd"
+                    dateFormat="dd/MM/yyyy"
                     valueName="selected"
                     onChange={([selected]) => selected}
                     name="checkIn"
@@ -141,6 +141,7 @@ function MakeEnquiry() {
                   <Controller
                     as={ReactDatePicker}
                     control={control}
+                    dateFormat="dd/MM/yyyy"
                     valueName="selected"
                     onChange={([selected]) => selected}
                     name="checkOut"

@@ -24,7 +24,7 @@ function Enquiries() {
   return (
     <Container fluid>
       <Row className="justify-content-md-center">
-        <Col md={5} xs={12}>
+        <Col md={5} xs={12} className="enquiries__col">
           <h2>Enquiries</h2>
           {enquiries.map(function (enquiry) {
             const { id, name, email, checkIn, checkOut } = enquiry;
