@@ -96,6 +96,31 @@ input.form-control {
     text-transform: uppercase;
     font-family: $textFont;
     font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin: 5px 20px;
+}
+
+.react-confirm-alert-button-group>button:nth-child(1) {
+    color: $darkPurple;
+    background-color: $pink;
+    border: 2px solid $darkPurple;
+    text-transform: uppercase;
+    font-family: $textFont;
+    font-weight: bold;
+    margin: 5px 20px;
+}
+
+.react-confirm-alert-button-group>button:hover {
+    color: $darkPurple;
+    background-color: $pink;
+    border: 2px solid $darkPurple;
+}
+
+.react-confirm-alert-button-group>button:nth-child(1):hover {
+    color: $pink;
+    background-color: $darkPurple;
+    border: 2px solid $pink;
 }
 
 .react-confirm-alert-button-group {
