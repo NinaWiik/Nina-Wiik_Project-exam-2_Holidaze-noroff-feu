@@ -90,7 +90,7 @@ function EditHotel() {
       <Row className="justify-content-md-center">
         <Col className="col-md-5">
           <Form onSubmit={handleSubmit(onSubmit)}>
-            <h1>Edit Accommodation</h1>
+            <h2>Edit Accommodation</h2>
             <div className="addHotel__col">
               <Form.Group>
                 <Form.Label>Name</Form.Label>
